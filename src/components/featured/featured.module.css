@@ -49,3 +49,36 @@
     width: max-content;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1280px){
+    .title{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .title{
+        font-size: 62px;
+    }
+    .imgContainer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 42px;
+    }
+    .imgContainer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .title{
+        font-size: 32px;
+    }
+    .imgContainer{
+        display: none;
+    }
+}
