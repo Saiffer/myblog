@@ -13,6 +13,7 @@
     width:36px;
     height: 36px;
     border-radius: 50%;
+    margin-bottom: 50px;
     background-color: transparent;
     border: 1px solid var(--textColor);
     display: flex;
@@ -47,6 +48,7 @@
 }
 
 .textArea{
+    margin-top: 75px;
     width: 100%;
 }
 
@@ -59,4 +61,5 @@
     background-color: #1a8917;
     color: white;
     cursor: pointer;
+    border-radius: 20px;
 }
