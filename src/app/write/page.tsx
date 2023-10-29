@@ -13,7 +13,7 @@ const Write = () => {
  
   return (
     <div className={styles.container}>
-      <input type="text" placeholder="Title" />
+      <input type="text" placeholder="Title" className={styles.input}/>
       <div className={styles.editor}>
         <button className={styles.button}  onClick={()=>setOpen(!open)}>
           <Image src="/plus.png" alt="" width={16} height={16}/>
@@ -34,6 +34,7 @@ const Write = () => {
           )}
           <ReactQuill theme="bubble" value={value} onChange={setValue} placeholder="Tell your story..." className={styles.textArea}/>
       </div>
+      <button className={styles.publish}>Publish</button>
     </div>
   )
 }
