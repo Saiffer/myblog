@@ -39,6 +39,13 @@
     background-color: #087BEA;
 }
 
+.userLoggedIn, .loading{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
     .wrapper{
         padding: 50px 100px;

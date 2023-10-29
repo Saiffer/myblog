@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/footer/Footer";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
+import AuthProvider from "@/providers/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html>
       <body className={inter.className}>
+        <AuthProvider>
         <ThemeContextProvider>
           <ThemeProvider>
             <div className="container">
@@ -32,6 +34,7 @@ export default function RootLayout({
             </div>
           </ThemeProvider>
         </ThemeContextProvider>
+        </AuthProvider>
       </body>
     </html>
   );
